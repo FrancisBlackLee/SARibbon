@@ -4,6 +4,10 @@ set(SARIBBON_LIB_NAME SARibbonBar)
 message(STATUS "SARIBBON_LIB_NAME=${SARIBBON_LIB_NAME}")
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+if(_SARIBBON_USE_FRAMELESS_LIB)
+    add_subdirectory(3rdparty)
+endif()
+
 #################################################
 # SAColorWidgets相关
 # https://github.com/czyt1988/SAColorWidgets
